@@ -597,7 +597,7 @@ Wire Wire Line
 Wire Wire Line
 	6750 2250 6750 2750
 Wire Wire Line
-	6750 2250 7750 2250
+	6750 2250 7100 2250
 Connection ~ 7750 2250
 Wire Wire Line
 	7750 2250 8350 2250
@@ -744,23 +744,21 @@ Wire Wire Line
 	3200 6000 2850 6000
 Text Label 3050 6500 0    50   ~ 0
 GHB
-Text Label 5900 2250 2    50   ~ 0
+Text Label 5500 2250 2    50   ~ 0
 5V_IN_RAW
 $Comp
 L Device:Fuse F2
 U 1 1 615065CC
-P 6100 2250
-F 0 "F2" V 5950 2250 50  0000 C CNN
-F 1 "Fuse" V 5994 2250 50  0000 C CNN
-F 2 "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6030 2250 50  0001 C CNN
-F 3 "~" H 6100 2250 50  0001 C CNN
-	1    6100 2250
+P 5700 2250
+F 0 "F2" V 5550 2250 50  0000 C CNN
+F 1 "Fuse" V 5594 2250 50  0000 C CNN
+F 2 "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5630 2250 50  0001 C CNN
+F 3 "~" H 5700 2250 50  0001 C CNN
+	1    5700 2250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5550 2250 5950 2250
-Wire Wire Line
-	6250 2250 6300 2250
+	5150 2250 5550 2250
 $Comp
 L Device:R R7
 U 1 1 6155A4C3
@@ -859,16 +857,10 @@ PGND
 Wire Wire Line
 	6300 2250 6750 2250
 Connection ~ 6750 2250
-Text Label 1400 4750 0    50   ~ 0
-SDA
-Text Label 1400 4850 0    50   ~ 0
-SCL
 Wire Wire Line
 	1350 4750 1700 4750
 Wire Wire Line
 	1700 4850 1350 4850
-Text Label 1400 4950 0    50   ~ 0
-WP
 Wire Wire Line
 	1700 4950 1350 4950
 Wire Wire Line
@@ -892,4 +884,30 @@ Wire Wire Line
 Connection ~ 7950 1250
 Wire Wire Line
 	7950 1250 8850 1250
+Text HLabel 1360 4750 0    50   Input ~ 0
+EEPROM_SDA
+Text HLabel 1350 4850 0    50   Input ~ 0
+EEPROM_SCL
+Text HLabel 1350 4950 0    50   Input ~ 0
+EEPROM_WP
+Text HLabel 7100 2100 1    50   Input ~ 0
+5V
+$Comp
+L Device:D_Schottky D5
+U 1 1 610C911D
+P 6000 2250
+F 0 "D5" H 6000 2034 50  0000 C CNN
+F 1 "D_Schottky" H 6000 2125 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6000 2250 50  0001 C CNN
+F 3 "~" H 6000 2250 50  0001 C CNN
+	1    6000 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6150 2250 6300 2250
+Wire Wire Line
+	7100 2250 7100 2100
+Connection ~ 7100 2250
+Wire Wire Line
+	7100 2250 7750 2250
 $EndSCHEMATC
