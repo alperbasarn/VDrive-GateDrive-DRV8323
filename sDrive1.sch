@@ -20,7 +20,7 @@ F0 "Drive_Stage" 50
 F1 "Drive_Stage.sch" 50
 $EndSheet
 $Sheet
-S 2600 1960 1510 2540
+S 3020 2200 1510 2540
 U 60F66E2D
 F0 "eeprom" 50
 F1 "eeprom.sch" 50
