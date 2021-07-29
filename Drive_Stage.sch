@@ -641,9 +641,11 @@ SHB
 Wire Wire Line
 	2930 4555 3280 4555
 $Comp
-L sDrive_Carriers:Drive_Stage B1
+L sDrive1-rescue:Drive_Stage-sDrive_Carriers B1
 U 1 1 612B38E9
 P 2330 3905
+AR Path="/612B38E9" Ref="B1"  Part="1" 
+AR Path="/60E74488/612B38E9" Ref="B1"  Part="1" 
 F 0 "B1" H 2355 5030 50  0000 C CNN
 F 1 "Drive_Stage" H 2355 4939 50  0000 C CNN
 F 2 "sDrive_Carriers:stage2" H 880 5305 50  0001 C CNN
@@ -1253,7 +1255,7 @@ Wire Wire Line
 	4606 1367 4855 1367
 Text Label 4793 1367 0    50   ~ 0
 VM_VSEN
-Text Label 1780 5205 2    50   ~ 0
+Text Label 1780 4005 2    50   ~ 0
 VM_VSEN
 Connection ~ 4606 1367
 $EndSCHEMATC

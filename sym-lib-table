@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name sDrive1-rescue)(type Legacy)(uri ${KIPRJMOD}/sDrive1-rescue.lib)(options "")(descr ""))
+)

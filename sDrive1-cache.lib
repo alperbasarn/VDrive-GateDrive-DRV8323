@@ -247,11 +247,11 @@ X VCC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# sDrive_Carriers_Drive_Stage
+# sDrive1-rescue_Drive_Stage-sDrive_Carriers
 #
-DEF sDrive_Carriers_Drive_Stage B 0 40 Y Y 1 F N
+DEF sDrive1-rescue_Drive_Stage-sDrive_Carriers B 0 40 Y Y 1 F N
 F0 "B" 350 1000 50 H V C CNN
-F1 "sDrive_Carriers_Drive_Stage" 100 1000 50 H V C CNN
+F1 "sDrive1-rescue_Drive_Stage-sDrive_Carriers" 100 1000 50 H V C CNN
 F2 "sDrive_Carriers:DriveStage" -1450 1400 50 H I C CNN
 F3 "" -1450 1400 50 H I C CNN
 DRAW
